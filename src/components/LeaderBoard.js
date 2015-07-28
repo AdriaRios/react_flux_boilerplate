@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import Reflux from 'reflux';
 import PlayersStore from '../stores/PlayersStore.js';
 import BoardItem from '../components/BoardItem.js';
 
@@ -15,27 +14,9 @@ function getPlayers() {
 
 export default React.createClass({
 
-    mixins: [Reflux.ListenerMixin],
-
     //We define the propTypes for improve reusability
     propTypes: {
         players: React.PropTypes.array
-    },
-
-    /**
-     * We will listen to Players store. On any change we will dispatch refresh list.
-     * @returns {null} no data returned
-     */
-    componentDidMount: function () {
-        this.listenTo(PlayersStore, this.refreshList);
-    },
-
-    getInitialState: function () {
-        return getPlayers();
-    },
-
-    refreshList: function () {
-        this.setState(getPlayers());
     },
 
     /**
@@ -44,10 +25,10 @@ export default React.createClass({
      */
     getItems: function () {
         let items = [],
-            i, len = this.state.players.length;
+            i, len = this.props.players.length;
 
         for (i = 0; i < len; i++) {
-            items.push(<BoardItem key={this.state.players[i].name} player={this.state.players[i]}/>);
+            items.push(<BoardItem key={this.props.players[i].name} player={this.props.players[i]}/>);
         }
 
         return items;

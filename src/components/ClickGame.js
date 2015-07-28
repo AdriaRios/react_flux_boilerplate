@@ -3,10 +3,28 @@
 import React from 'react';
 
 import Header from '../components/Header.js';
-import ClickableArea from '../components/ClickableArea.js';
-import LeaderBoard from '../components/LeaderBoard.js';
+import ClickableArea from '../components/ClickableArea';
+import LeaderBoard from '../components/LeaderBoard';
+import PlayersStore from '../stores/PlayersStore';
 
 export default React.createClass({
+    getInitialState: function () {
+        return PlayersStore.getPlayers();
+    },
+
+    componentDidMount: function () {
+        PlayersStore.addChangeListener(this.refreshList);
+    },
+
+    componentWillMount: function () {
+        PlayersStore.removeChangeListener(this.refreshList);
+    },
+
+    refreshList: function () {
+        this.setState({
+            players: PlayersStore.getPlayers()
+        });
+    },
     render() {
         return (
             <div className="col-md-7 center">
@@ -17,8 +35,8 @@ export default React.createClass({
                     <Header />
                 </div>
                 <div className="col-md-10 secondary-box center">
-                    <ClickableArea />
-                    <LeaderBoard />
+                    <ClickableArea players={this.state.list}/>
+                    <LeaderBoard players={this.state.leaderBoard}/>
                 </div>
             </div>
         );

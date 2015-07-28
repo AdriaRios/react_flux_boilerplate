@@ -1,8 +1,9 @@
 'use strict';
 
+import '../utils/polyfill.js';
 import React from 'react';
 import ClickGame from './ClickGame';
-React.render( 
+React.render(
     <ClickGame />,
     document.getElementById('main')
 );

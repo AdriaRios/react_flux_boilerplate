@@ -1,0 +1,24 @@
+.item {
+    margin-bottom: 4px;
+}
+
+.item-btn {
+    margin-top: 15px;
+}
+
+.item-span {
+    font-size: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(137, 137, 137);
+}
+
+.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secondary-box {
+    margin-top: 32px;
+}

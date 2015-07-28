@@ -8,7 +8,7 @@
     },
     {
       "name": "Carles Nuñez",
-      "email": "tomcask@gmail.com"
+      "email": "carles.nunez@hotmail.es"
     },
     {
       "name": "Adria ",
@@ -18,15 +18,20 @@
   "devDependencies": {
     "babelify": "^6.1.2",
     "browserify": "^10.2.3",
+    "eslint-plugin-react": "^2.0.2",
+    "eslint-plugin-shadow-exception": "~1.1.1",
+    "flux": "~2.0.3",
     "grunt": "^0.4.5",
     "grunt-babel": "^5.0.1",
     "grunt-browserify": "^3.8.0",
     "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "~0.10.1",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-eslint": ">=16.0.0",
     "grunt-karma": "^0.11.0",
-    "grunt-contrib-connect": "~0.10.1",
+    "grunt-reactify": "0.0.2",
     "jasmine-core": "^2.3.4",
     "karma": "^0.12.35",
     "karma-babel-preprocessor": "^5.2.1",
@@ -34,15 +39,12 @@
     "karma-coverage": "^0.2.6",
     "karma-jasmine": "^0.3.5",
     "karma-phantomjs-launcher": "^0.2.0",
+    "livereactload": "~0.6.0",
     "phantomjs": "^1.9.17",
     "react": "~0.13.3",
-    "flux": "~2.0.3",
-    "grunt-reactify": "0.0.2",
     "reactify": "~1.1.1",
-    "grunt-eslint": ">=16.0.0",
-    "eslint-plugin-react": "^2.0.2",
-    "eslint-plugin-shadow-exception": "~1.1.1",
-    "livereactload": "~0.6.0"
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
   },
   "browserify": {
     "transform": [

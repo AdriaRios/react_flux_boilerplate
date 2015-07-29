@@ -9,7 +9,7 @@ export default React.createClass({
     propTypes: {
         players: React.PropTypes.array
     },
-
+    
     getItems: function () {
         let items = [],
             i, len = this.props.players.length;

@@ -61,15 +61,10 @@ class PlayersStore extends EventEmitter {
         this.emit('change');
     }
 
-    getPlayers() {
-        return this.players;
-    }
-
     incrementScore(playerId) {
         this.players.leaderBoard.find(x => x.id === playerId).score++;
         this.sortPlayers();
         this.emit('change');
-        console.log(this.players.leaderBoard);
     }
 
     // Add change listener
@@ -81,7 +76,10 @@ class PlayersStore extends EventEmitter {
     removeChangeListener(callback) {
         this.removeListener('change', callback);
     }
-}
-;
+
+    getPlayers() {
+        return this.players;
+    }
+};
 
 export default new PlayersStore();

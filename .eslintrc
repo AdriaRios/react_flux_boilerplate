@@ -49,7 +49,7 @@
     "no-dupe-keys": 2, // disallow duplicate keys when creating object literals
     "no-duplicate-case": 2, // disallow a duplicate case label.
     "no-empty": 2, // disallow empty statements
-    "no-empty-class": 2, // disallow the use of empty character classes in regular expressions
+    "no-empty-character-class": 2, // disallow the use of empty character classes in regular expressions
     "no-ex-assign": 2, // disallow assigning to the exception in a catch block
     "no-extra-boolean-cast": 2, // disallow double-negation boolean casts in a boolean context
     "no-extra-parens": 0, // disallow unnecessary parentheses (off by default)
@@ -61,7 +61,7 @@
     "no-negated-in-lhs": 2, // disallow negation of the left operand of an in expression
     "no-obj-calls": 2, // disallow the use of object properties of the global object (Math and JSON) as functions
     "no-regex-spaces": 2, // disallow multiple spaces in a regular expression literal
-    "no-reserved-keys": 2, // disallow reserved words being used as object literal keys (off by default)
+    "quote-props": 2, // disallow reserved words being used as object literal keys (off by default)
     "no-sparse-arrays": 2, // disallow sparse arrays
     "no-unreachable": 2, // disallow unreachable statements after a return, throw, continue, or break statement
     "use-isnan": 2, // disallow comparisons with the value NaN
@@ -78,11 +78,11 @@
     "complexity": 0, // specify the maximum cyclomatic complexity allowed in a program (off by default)
     "consistent-return": 2, // require return statements to either always or never specify values
     "curly": 2, // specify curly brace conventions for all control statements
-    "default-case": 2, // require default case in switch statements (off by default)
+    "default-case": 1, // require default case in switch statements (off by default)
     "dot-notation": 2, // encourages use of dot notation whenever possible
     "eqeqeq": 2, // require the use of === and !==
     "guard-for-in": 2, // make sure for-in loops have an if statement (off by default)
-    "global-strict":2,
+    "strict":2,
     "no-alert": 2, // disallow the use of alert, confirm, and prompt
     "no-caller": 2, // disallow use of arguments.caller or arguments.callee
     "no-div-regex": 2, // disallow division operators explicitly at beginning of regular expression (off by default)
@@ -179,7 +179,7 @@
     "no-ternary": 0, // disallow the use of ternary operators (off by default)
     "no-trailing-spaces": 1, // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": 1, // disallow dangling underscores in identifiers
-    "no-wrap-func": 1, // disallow wrapping of non-IIFE statements in parens
+    "no-extra-parens": 1, // disallow wrapping of non-IIFE statements in parens
     "one-var": [0, "never"], // allow just one var statement per function (off by default)
     "operator-assignment": [1, "never"], // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "padded-blocks": [1, "never"], // enforce padding within blocks (off by default)
@@ -191,11 +191,11 @@
     "space-after-keywords": [2, "always"], // require a space after certain keywords (off by default)
     "space-before-blocks": [1, "always"], // require or disallow space before blocks (off by default)
     "space-before-function-paren": [1, {"anonymous": "always", "named": "never"}], // require or disallow space before function opening parenthesis (off by default)
-    "space-in-brackets": [2, "never"], // require or disallow spaces inside brackets (off by default)
+    "array-bracket-spacing": [2, "never"], // require or disallow spaces inside brackets (off by default)
     "space-in-parens": [1, "never"], // require or disallow spaces inside parentheses (off by default)
     // Don't allo0w 1+1
     "space-infix-ops": [2],
-    "space-unary-ops": [1, {"words": true, "nonwords": false}], // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
+    "space-unary-ops": [0, {"words": true, "nonwords": false}], // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     "wrap-regex": 0, // require regex literals to be wrapped in parentheses (off by default)
 
     //
@@ -214,11 +214,11 @@
     // the functionality is the same.
     //
     "max-depth": [2, 3], // specify the maximum depth that blocks can be nested (off by default)
-    "max-len": [2, 100, 2], // specify the maximum length of a line in your program (off by default)
+    "max-len": [2, 200, 2], // specify the maximum length of a line in your program (off by default)
     "max-params": [2, 5], // limits the number of parameters that can be used in the function declaration. (off by default)
     "max-statements": 0, // specify the maximum number of statement allowed in a function (off by default)
     "no-bitwise": 0, // disallow use of bitwise operators (off by default)
-    "no-plusplus": 2, // disallow use of unary operators, ++ and -- (off by default)
+    "no-plusplus": 0, // disallow use of unary operators, ++ and -- (off by default)
 
     //
     // eslint-plugin-react

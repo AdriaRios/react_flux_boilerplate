@@ -1,16 +1,16 @@
 'use strict';
 
 import React from 'react';
-import PlayersStore from '../stores/PlayersStore.js';
+//import PlayersStore from '../stores/PlayersStore.js';
 import BoardItem from '../components/BoardItem.js';
 
 /**
  * Method used to wrap the data on a object with players property.
  * @returns {{players: *}} an array with unique property. Contains all the players data.
  */
-function getPlayers() {
+/*function getPlayers() {
     return {players: PlayersStore.getPlayersLB()};
-}
+}*/
 
 export default React.createClass({
 

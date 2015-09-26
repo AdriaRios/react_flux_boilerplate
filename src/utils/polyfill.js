@@ -1,5 +1,5 @@
 'use strict';
-/* eslint no-extend-native:0, vars-on-top:0, no-var:0, no-eq-null:0, no-undefined:0 */
+/* eslint no-extend-native:0, vars-on-top:0, no-var:0, no-eq-null:0, no-undefined:0, eqeqeq:0 */
 if (!Array.prototype.find) {
     Array.prototype.find = function (predicate) {
         if (this == null) {

@@ -80,6 +80,6 @@ class PlayersStore extends EventEmitter {
     getPlayers() {
         return this.players;
     }
-};
+}
 
 export default new PlayersStore();

@@ -1,5 +1,5 @@
-import Dispatcher from '../dispatcher/Dispatcher'
-import Constants from '../dispatcher/Constants'
+import Dispatcher from '../dispatcher/Dispatcher';
+import Constants from '../dispatcher/Constants';
 
 export default {
     addPlayer(playerName){
@@ -16,4 +16,4 @@ export default {
             playerId: playerId
         });
     }
-}
+};

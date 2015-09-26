@@ -24,6 +24,6 @@ export default React.createClass({
                 <ClickableArea players={this.state.list}/>
                 <LeaderBoard players={this.state.leaderBoard}/>
             </div>
-        )
+        );
     }
 });

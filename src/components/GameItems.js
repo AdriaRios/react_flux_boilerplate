@@ -19,8 +19,7 @@ export default React.createClass({
     },
 
     render(){
-        return (
-            <div className="col-md-10 secondary-box center">
+        return (<div className="col-md-10 secondary-box center">
                 <ClickableArea players={this.state.list}/>
                 <LeaderBoard players={this.state.leaderBoard}/>
             </div>
